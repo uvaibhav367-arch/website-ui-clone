@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix - Watch TV Shows and Movies</title>
+  <meta name="description" content="A Netflix-inspired landing page built with semantic HTML5 and modern CSS3. Front-End Development training project." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Netflix home">
+        <span class="brand-text">NETFLIX</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <ul>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#row-1">TV Shows</a></li>
+          <li><a href="#row-2">Movies</a></li>
+          <li><a href="#row-3">New &amp; Popular</a></li>
+          <li><a href="#row-1">My List</a></li>
+          <li><a href="#row-2">Browse by Languages</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.7 21a2 2 0 0 1-3.4 0" />
+          </svg>
+        </button>
+        <span class="kids">Kids</span>
+        <button class="avatar" type="button" aria-label="Account menu">
+          <span aria-hidden="true">V</span>
+        </button>
+        <button class="icon-btn burger" type="button" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">NETFLIX</p>
+        <h1 class="hero-title">The Crown</h1>
+        <p class="hero-rating">
+          <span class="stars" aria-label="Rated 4.5 out of 5">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star half">&#9733;</span>
+          </span>
+          <span class="rating-value">4.5</span>
+          <span class="dot-sep">•</span>
+          <span class="year">2020</span>
+          <span class="dot-sep">•</span>
+          <span class="maturity">TV-14</span>
+        </p>
+        <p class="hero-genre">Season 4 &mdash; Historical Drama &middot; 4 Seasons</p>
+        <p class="hero-desc">
+          A gripping portrayal of the reign of Queen Elizabeth II, following the political rivalries
+          and personal sacrifices that shaped the second half of the twentieth century.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-play" type="button">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Play
+          </button>
+          <button class="btn btn-info" type="button">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-5M12 8h.01" stroke-linecap="round" />
+            </svg>
+            More Info
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-side-info" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-5M12 8h.01" stroke-linecap="round" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="rows" aria-label="Browse titles">
+      <article class="row" id="row-1">
+        <h2 class="row-title">Popular on Netflix</h2>
+        <ul class="row-track">
+          <li class="card"><span class="poster p1"><span class="poster-label">Stranger<br />Things</span></span></li>
+          <li class="card"><span class="poster p2"><span class="poster-label">Money<br />Heist</span></span></li>
+          <li class="card"><span class="poster p3"><span class="poster-label">Dark</span></span></li>
+          <li class="card"><span class="poster p4"><span class="poster-label">Wednesday</span></span></li>
+          <li class="card"><span class="poster p5"><span class="poster-label">The<br />Office</span></span></li>
+          <li class="card"><span class="poster p6"><span class="poster-label">Squid<br />Game</span></span></li>
+        </ul>
+      </article>
+
+      <article class="row" id="row-2">
+        <h2 class="row-title">Trending Now</h2>
+        <ul class="row-track">
+          <li class="card"><span class="poster p4"><span class="poster-label">Wednesday</span></span></li>
+          <li class="card"><span class="poster p7"><span class="poster-label">Arcane</span></span></li>
+          <li class="card"><span class="poster p3"><span class="poster-label">Dark</span></span></li>
+          <li class="card"><span class="poster p8"><span class="poster-label">The<br />Last of Us</span></span></li>
+          <li class="card"><span class="poster p9"><span class="poster-label">Peaky<br />Blinders</span></span></li>
+          <li class="card"><span class="poster p10"><span class="poster-label">Interstellar</span></span></li>
+        </ul>
+      </article>
+
+      <article class="row" id="row-3">
+        <h2 class="row-title">New &amp; Popular</h2>
+        <ul class="row-track">
+          <li class="card"><span class="poster p11"><span class="poster-label">House of<br />the Dragon</span></span></li>
+          <li class="card"><span class="poster p12"><span class="poster-label">Blue Eye</span></span></li>
+          <li class="card"><span class="poster p13"><span class="poster-label">The<br />Bear</span></span></li>
+          <li class="card"><span class="poster p14"><span class="poster-label">Fargo</span></span></li>
+          <li class="card"><span class="poster p15"><span class="poster-label">Andor</span></span></li>
+          <li class="card"><span class="poster p16"><span class="poster-label">The Boys</span></span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="faq-inner">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is Netflix?</summary>
+            <p>Netflix is a streaming service that offers a wide range of award-winning TV shows,
+              films, documentaries and original content across a variety of genres and languages.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where is Netflix available?</summary>
+            <p>Netflix is available in most regions worldwide. Availability of specific titles can vary
+              by country due to licensing agreements.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I cancel?</summary>
+            <p>Netflix subscriptions can be cancelled at any time from the account settings page.
+              You keep access until the end of the current billing period.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I change my password?</summary>
+            <p>Open the account page, choose "Change password", verify your current password and set a
+              new one. Passwords must be at least six characters long.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is the cheapest tier?</summary>
+            <p>The Basic plan is the lowest priced option and includes HD streaming on a single screen
+              at a time, with downloads available on mobile devices.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I share my account?</summary>
+            <p>Household members can use the same account and create their own profiles, each with
+              separate viewing history and preferences.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">NETFLIX</div>
+      <div class="footer-columns">
+        <nav aria-label="Footer">
+          <h3>Audio Description</h3>
+          <ul>
+            <li><a href="#top">English</a></li>
+            <li><a href="#top">Hindi</a></li>
+            <li><a href="#top">Tamil</a></li>
+            <li><a href="#top">Telugu</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer">
+          <h3>Media Centre</h3>
+          <ul>
+            <li><a href="#top">Media Centre</a></li>
+            <li><a href="#top">Press</a></li>
+            <li><a href="#top">Advertising</a></li>
+            <li><a href="#top">Partnerships</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#top">Terms of Use</a></li>
+            <li><a href="#top">Privacy Policy</a></li>
+            <li><a href="#top">Cookie Preferences</a></li>
+            <li><a href="#top">Legal Notices</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="#top">Gift Cards</a></li>
+            <li><a href="#top">Help Centre</a></li>
+            <li><a href="#top">Investor Relations</a></li>
+            <li><a href="#top">Jobs</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-note">
+        UI clone created for a Front-End Development training project. Not affiliated with Netflix, Inc.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
